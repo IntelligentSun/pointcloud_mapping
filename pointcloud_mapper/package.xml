@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pointcloud_mapper</name>
+  <version>0.1.0</version>
+  <description>The pointcloud_mapper package</description>
+
+  <maintainer email="sunjiayuan@todo.todo">sunjiayuan</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <author >sunjiayuan</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>pcl_ros</depend>
+  <depend>pcl_conversions</depend>
+  <depend>cv_bridge</depend>
+  <depend>velodyne_pointcloud</depend>
+  <depend>tf</depend>
+  <depend>geometry_utils</depend>
+  <depend>pose_graph_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

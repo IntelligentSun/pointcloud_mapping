@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="pointcloud_mapper" type="mapper" name="pointcloud_mapping" output="screen">
+    <rosparam command="load" file="$(find pointcloud_mapper)/config/mapper.yaml" />
+    <remap from="point_cloud" to="/lslidar_point_cloud"/>
+  </node>
+</launch>

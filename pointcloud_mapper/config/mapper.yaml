@@ -1,0 +1,43 @@
+frame_id:
+  fixed: "map"
+  base: "base_link"
+  odometry: "odom"
+rate:
+  estimate: 20
+  visualization: 0.5
+filtering:
+  grid_filter: false
+  grid_res: 0.2
+  random_filter: true
+  decimate_percentage: 0.9
+  outlier_filter: false
+  outlier_std: 1.0
+  outlier_knn: 10
+  radius_filter: false
+  radius: 0.15
+  radius_knn: 3.0
+init:
+  position:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  orientation:
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+localization:
+  tf_epsilon: 0.0000000001
+  corr_dist: 1.0
+  iterations: 10
+  transform_thresholding: false
+  max_translation: 0.1
+  max_rotation: 0.3
+map:
+  octree_resolution: 0.05
+icp:
+  tf_epsilon: 0.0000000001
+  corr_dist: 1.0
+  iterations: 10
+  transform_thresholding: false
+  max_translation: 0.1
+  max_rotation: 0.3
